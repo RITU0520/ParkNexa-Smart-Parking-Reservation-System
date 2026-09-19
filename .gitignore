@@ -1,0 +1,68 @@
+# ParkNexa - Smart Parking Reservation System
+# Git ignore rules for a PHP + MySQL/XAMPP project
+
+# =========================
+# Secrets / environment
+# =========================
+.env
+.env.*
+!.env.example
+
+# Live/local database credentials
+config/database.php
+
+# API / map configuration that may contain private keys
+config/maps.php
+
+# =========================
+# Local / deployment helpers
+# =========================
+setup_admin.php
+test-db.php
+
+# =========================
+# Dependencies / generated files
+# =========================
+vendor/
+node_modules/
+*.log
+
+# =========================
+# IDE / editor files
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS-generated files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Temporary / runtime files
+# =========================
+tmp/
+temp/
+cache/
+storage/logs/
+uploads/
+
+# =========================
+# Archives / backups
+# =========================
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.bak
+
+# =========================
+# Local XAMPP / server files
+# =========================
+php_errorlog
+error_log
